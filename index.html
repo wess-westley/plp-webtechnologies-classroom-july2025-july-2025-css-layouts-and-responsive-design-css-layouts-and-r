@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Westley Kanyora Gitau | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Theme Toggle -->
+  <button id="theme-toggle">🌙</button>
+
+  <!-- Header / Hero -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="profile-placeholder.jpg" alt="Profile Photo" class="profile-pic" />
+      <div>
+        <h1>Westley Kanyora Gitau</h1>
+        <p>Software Engineer | AWS & PLP Trainee | Skater & Rollball Player</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation (Flexbox) -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Layout (Grid) -->
+  <main class="main-grid">
+    <!-- Content Area -->
+    <section class="content">
+      <!-- About -->
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi, I’m Westley — a junior software engineering student at Kirinyaga University, 
+          currently a trainee at AWS and PLP. I love building full-stack apps with Django, React, 
+          and deploying solutions in the cloud. Outside of tech, I enjoy skating and playing rollball.
+        </p>
+      </section>
+
+      <!-- Projects (Flexbox cards) -->
+      <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="card-container">
+          <div class="card">
+            <h3>📚 Bookstore App</h3>
+            <p>Django + React + JWT authentication with role-based dashboards.</p>
+          </div>
+          <div class="card">
+            <h3>🌐 Portfolio Website</h3>
+            <p>A custom dark/light theme portfolio using Grid & Flexbox.</p>
+          </div>
+          <div class="card">
+            <h3>☁️ AWS & PLP Labs</h3>
+            <p>Cloud engineering labs covering EC2, S3, IAM, networking & deployment.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Django & REST API</li>
+          <li>React + Redux</li>
+          <li>Cloud (AWS, PLP training, networking)</li>
+          <li>Database design (PostgreSQL, MySQL)</li>
+          <li>Linux & server maintenance</li>
+        </ul>
+      </section>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="contact">
+      <h2>Quick Info</h2>
+      <p><strong>Email:</strong> westleykanyora9@gmail.com</p>
+      <p><strong>Phone:</strong> 0798245012</p>
+      <p><strong>GitHub:</strong> 
+        <a href="https://github.com/westley-wess" target="_blank">westley-wess</a>
+      </p>
+      <p><strong>Referee:</strong> Available upon request</p>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Westley Kanyora Gitau | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    // Dark/Light theme toggle
+    const toggleBtn = document.getElementById("theme-toggle");
+    const body = document.body;
+
+    toggleBtn.addEventListener("click", () => {
+      body.classList.toggle("dark-theme");
+      toggleBtn.textContent = body.classList.contains("dark-theme") ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>
